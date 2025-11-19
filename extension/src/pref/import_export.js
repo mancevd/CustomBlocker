@@ -43,7 +43,7 @@ var PrefRuleWrapper = (function () {
         exampleLink.setAttribute("href", this.rule.example_url);
         var favicon = document.createElement('IMG');
         var faviconSrc = (this.rule.example_url) ?
-            'chrome://favicon/' + rule.example_url : chrome.extension.getURL('img/world.png');
+            'chrome://favicon/' + rule.example_url : chrome.runtime.getURL('img/world.png');
         favicon.className = 'favicon';
         favicon.setAttribute("src", faviconSrc);
         informationDiv.appendChild(favicon);

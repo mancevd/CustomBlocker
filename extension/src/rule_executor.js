@@ -38,14 +38,14 @@ var RuleExecutor = (function () {
                     rule.staticXpath = cssSelector;
                 }
             }
-            for (var _i = 0, _a = rule.words; _i < _a.length; _i++) {
-                var word = _a[_i];
+            for (var _b = 0, _c = rule.words; _b < _c.length; _b++) {
+                var word = _c[_b];
                 word.label = String(word.word);
             }
-            for (var _b = 0, _c = rule.wordGroups; _b < _c.length; _b++) {
-                var group = _c[_b];
-                for (var _d = 0, _e = group.words; _d < _e.length; _d++) {
-                    var word = _e[_d];
+            for (var _d = 0, _e = rule.wordGroups; _d < _e.length; _d++) {
+                var group = _e[_d];
+                for (var _f = 0, _g = group.words; _f < _g.length; _f++) {
+                    var word = _g[_f];
                     word.label = String(group.name) + ">" + String(word.word);
                 }
             }
