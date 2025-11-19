@@ -220,7 +220,7 @@ var CustomBlockerUtil = (function () {
         }
     };
     CustomBlockerUtil.showHelp = function (fileName) {
-        window.open(chrome.extension.getURL('/help/' + chrome.i18n.getMessage('extLocale') + '/' + fileName), "help", "top=10,left=10,width=480 height=500 resizable=yes menubar=no, toolbar=no");
+        window.open(chrome.runtime.getURL('/help/' + chrome.i18n.getMessage('extLocale') + '/' + fileName), "help", "top=10,left=10,width=480 height=500 resizable=yes menubar=no, toolbar=no");
     };
     CustomBlockerUtil.trim = function (str) {
         return str.replace(/^[\s　]+|[\s　]+$/g, '');
@@ -228,7 +228,7 @@ var CustomBlockerUtil = (function () {
     CustomBlockerUtil.createKeywordOptionIcon = function (fileName, suffix, tip) {
         var img = document.createElement("IMG");
         img.title = chrome.i18n.getMessage(tip);
-        img.setAttribute("src", chrome.extension.getURL("img/" + fileName + "_" + suffix + ".png"));
+        img.setAttribute("src", chrome.runtime.getURL("img/" + fileName + "_" + suffix + ".png"));
         img.className = "option";
         return img;
     };
@@ -368,7 +368,7 @@ var CustomBlockerUtil = (function () {
                 return;
         }
         var cssNode = document.createElement('LINK');
-        cssNode.setAttribute("href", chrome.extension.getURL(path));
+        cssNode.setAttribute("href", chrome.runtime.getURL(path));
         cssNode.setAttribute("rel", "stylesheet");
         cssNode.className = CustomBlockerUtil.CSS_CLASS;
         document.getElementsByTagName('HEAD')[0].appendChild(cssNode);

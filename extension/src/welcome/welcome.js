@@ -122,7 +122,7 @@ var SiteWrapper = (function () {
         li.appendChild(checkbox);
         var favicon = document.createElement('IMG');
         favicon.setAttribute("src", (this.site.url) ?
-            'chrome://favicon/' + this.site.url : chrome.extension.getURL('img/world.png'));
+            'chrome://favicon/' + this.site.url : chrome.runtime.getURL('img/world.png'));
         li.appendChild(favicon);
         var titleLabel = document.createElement('SPAN');
         titleLabel.appendChild(document.createTextNode(this.site.name));

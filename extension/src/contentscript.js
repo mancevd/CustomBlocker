@@ -107,7 +107,7 @@ var BackgroundCommunicator = (function () {
     };
     return BackgroundCommunicator;
 }());
-chrome.extension.sendRequest({ command: "requestRules" });
+chrome.runtime.sendMessage({ command: "requestRules" });
 if (!window.elementHighlighter)
     window.elementHighlighter = new ElementHighlighter();
 if (!window.bgCommunicator) {
@@ -117,7 +117,7 @@ if (!window.bgCommunicator) {
 document.addEventListener('visibilitychange', function () {
     window.bgCommunicator.onVisibilityChange(document.hidden);
 });
-chrome.extension.onRequest.addListener(function (request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     console.warn("WARNING: Legacy request type.");
     console.warn(request);
     window.bgCommunicator.processBackgroundRequest(request, sender, sendResponse);

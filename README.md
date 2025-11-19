@@ -1,6 +1,18 @@
-Manifest v3の仕様に対応しないと最新のChromeで動かないのですが、予想以上に面倒であることが判明しました。Chromeのアップデートに対応するためにまとまった時間を作るのが難しく、今後メンテナンスを続ける時間が無いため、開発を一旦中止します。ストアでも現在非公開となっています。
+## Manifest V3 Migration - November 2025
 
-Complying with the Manifest v3 specification proved to be more cumbersome than expected. It is difficult to make a chunk of time to keep up with Chrome updates, and I don't have enough time to continue maintenance in the future, so I am suspending development. Also, it is removed from the store.
+CustomBlocker has been successfully migrated to Manifest V3! The extension is now fully compliant with the latest Google Chrome standards and requirements for the Chrome Web Store.
+
+### What's New in Version 5.0.0:
+
+- ✅ Migrated to Manifest V3
+- ✅ Converted background page to service worker
+- ✅ Updated all deprecated Chrome APIs
+- ✅ Replaced WebSQL with chrome.storage API
+- ✅ Added privacy policy
+- ✅ Full compatibility with latest Chrome versions
+
+The extension maintains all its original functionality while meeting modern browser security and performance standards.
+
 
 # CustomBlocker for Google Chrome
 

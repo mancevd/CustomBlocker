@@ -191,7 +191,7 @@ var RuleContainer = (function () {
         informationDiv.appendChild(urlDiv);
         informationDiv.appendChild(keywordsDiv);
         var favicon = document.createElement('IMG');
-        var hrefValue = (this.rule.example_url) ? 'chrome://favicon/' + this.rule.example_url : chrome.extension.getURL('img/world.png');
+        var hrefValue = (this.rule.example_url) ? 'chrome://favicon/' + this.rule.example_url : chrome.runtime.getURL('img/world.png');
         favicon.setAttribute("src", hrefValue);
         favicon.className = 'favicon';
         informationDiv.appendChild(favicon);
