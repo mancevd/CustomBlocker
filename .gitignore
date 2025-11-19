@@ -1,0 +1,19 @@
+# Backup files
+*.mv2backup
+*.backup
+*.bak
+
+# TypeScript build artifacts (project root)
+/ts/package-lock.json
+/ts/node_modules/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
