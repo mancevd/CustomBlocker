@@ -1,5 +1,7 @@
 ## Manifest V3 Migration - November 2025
 
+**Last updated:** 2026-05-24
+
 CustomBlocker has been successfully migrated to Manifest V3! The extension is now fully compliant with the latest Google Chrome standards and requirements for the Chrome Web Store.
 
 ### What's New in Version 5.0.0:
